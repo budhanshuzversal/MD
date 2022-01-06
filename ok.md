@@ -5,7 +5,9 @@ This cloudformation template is used to create and maintain the aws user and per
 
 <details><summary>Create aws user</summary><br/>
 
-<details><summary>DEV</summary><br/>
+ <ul>
+    <details><summary>DEV</summary><br/>
+ 
 
   ```sh
   aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
@@ -36,75 +38,77 @@ This cloudformation template is used to create and maintain the aws user and per
   --region us-east-2 \
   --capabilities CAPABILITY_NAMED_IAM \
  ```
-</details>
-<details><summary>PROD</summary><br/>
-
-  ```sh
-  aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
-  --template-body file://main.yml \
-  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
-  ParameterKey=LambdaService,ParameterValue=unigql-beta \
-  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
-  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
-  ParameterKey=ProjectName,ParameterValue=unigql-beta\
-  --tags Key=project,Value=unigql-beta \
-  --region us-east-2 \
-  --capabilities CAPABILITY_NAMED_IAM \
- ```
-</details>
-</details>
-<details><summary>Update aws user</summary><br/>
-
-<details><summary>DEV</summary><br/>
-
-  ```sh
-  aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
-  --template-body file://main.yml \
-  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
-  ParameterKey=LambdaService,ParameterValue=unigql-beta \
-  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
-  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
-  ParameterKey=ProjectName,ParameterValue=unigql-beta\
-  --tags Key=project,Value=unigql-beta \
-  --region us-east-2 \
-  --capabilities CAPABILITY_NAMED_IAM \
- ```
-</details>
-
-<details><summary>STG</summary><br/>
-
-  ```sh
-  aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
-  --template-body file://main.yml \
-  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
-  ParameterKey=LambdaService,ParameterValue=unigql-beta \
-  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
-  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
-  ParameterKey=ProjectName,ParameterValue=unigql-beta\
-  --tags Key=project,Value=unigql-beta \
-  --region us-east-2 \
-  --capabilities CAPABILITY_NAMED_IAM \
- ```
-</details>
-<details><summary>PROD</summary><br/>
-
-  ```sh
-  aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
-  --template-body file://main.yml \
-  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
-  ParameterKey=LambdaService,ParameterValue=unigql-beta \
-  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
-  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
-  ParameterKey=ProjectName,ParameterValue=unigql-beta\
-  --tags Key=project,Value=unigql-beta \
-  --region us-east-2 \
-  --capabilities CAPABILITY_NAMED_IAM \
- ```
-</details>
-</details>
   
-<details><summary>Delete aws user</summary><br/>
+</details>
+<details><summary>PROD</summary><br/>
 
+  ```sh
+  aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
+  --template-body file://main.yml \
+  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
+  ParameterKey=LambdaService,ParameterValue=unigql-beta \
+  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
+  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
+  ParameterKey=ProjectName,ParameterValue=unigql-beta\
+  --tags Key=project,Value=unigql-beta \
+  --region us-east-2 \
+  --capabilities CAPABILITY_NAMED_IAM \
+ ```
+</details>
+</details>
+</ul>  
+<details><summary>Update aws user</summary><br/>
+<ul>
+<details><summary>DEV</summary><br/>
+
+  ```sh
+  aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
+  --template-body file://main.yml \
+  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
+  ParameterKey=LambdaService,ParameterValue=unigql-beta \
+  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
+  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
+  ParameterKey=ProjectName,ParameterValue=unigql-beta\
+  --tags Key=project,Value=unigql-beta \
+  --region us-east-2 \
+  --capabilities CAPABILITY_NAMED_IAM \
+ ```
+</details>
+
+<details><summary>STG</summary><br/>
+
+  ```sh
+  aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
+  --template-body file://main.yml \
+  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
+  ParameterKey=LambdaService,ParameterValue=unigql-beta \
+  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
+  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
+  ParameterKey=ProjectName,ParameterValue=unigql-beta\
+  --tags Key=project,Value=unigql-beta \
+  --region us-east-2 \
+  --capabilities CAPABILITY_NAMED_IAM \
+ ```
+</details>
+<details><summary>PROD</summary><br/>
+
+  ```sh
+  aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
+  --template-body file://main.yml \
+  --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
+  ParameterKey=LambdaService,ParameterValue=unigql-beta \
+  ParameterKey=HostedZoneId,ParameterValue=Z0445463G44KW7B1YUXX \
+  ParameterKey=ExternalId,ParameterValue=dev-unigql-beta \
+  ParameterKey=ProjectName,ParameterValue=unigql-beta\
+  --tags Key=project,Value=unigql-beta \
+  --region us-east-2 \
+  --capabilities CAPABILITY_NAMED_IAM \
+ ```
+</details>
+</details>
+</ul>  
+<details><summary>Delete aws user</summary><br/>
+<ul>
 <details><summary>DEV</summary><br/>
 
   ```sh
@@ -127,6 +131,7 @@ This cloudformation template is used to create and maintain the aws user and per
 </details>
 
 </details>
+</ul>
 
 ---
 
