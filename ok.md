@@ -1,7 +1,7 @@
 # Queries
 
 <details><summary>DEV</summary><br/>
-<details><summary>Create gh-actions-user</summary><br/>
+-<details><summary>Create gh-actions-user</summary><br/>
 aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --template-body file://main.yml \
   --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
@@ -14,7 +14,7 @@ aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --capabilities CAPABILITY_NAMED_IAM \
 </details>
 
-<details><summary>Update gh-actions-user</summary><br/>
+-<details><summary>Update gh-actions-user</summary><br/>
 aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --template-body file://main.yml \
   --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
@@ -27,7 +27,7 @@ aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --capabilities CAPABILITY_NAMED_IAM \
 </details>
 
-<details><summary>Delete</summary><br/>
+-<details><summary>Delete</summary><br/>
 aws cloudformation delete-stack --stack-name quoddud-gql-beta-gh-actions-user --region us-east-2
 </details>
 
@@ -35,7 +35,7 @@ aws cloudformation delete-stack --stack-name quoddud-gql-beta-gh-actions-user --
 
 
 <details><summary>STG</summary><br/>
-<details><summary>Create gh-actions-user</summary><br/>
+-<details><summary>Create gh-actions-user</summary><br/>
 aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --template-body file://main.yml \
   --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
@@ -48,7 +48,7 @@ aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --capabilities CAPABILITY_NAMED_IAM \
 </details>
 
-<details><summary>Update gh-actions-user</summary><br/>
+-<details><summary>Update gh-actions-user</summary><br/>
 aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --template-body file://main.yml \
   --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
@@ -61,14 +61,14 @@ aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --capabilities CAPABILITY_NAMED_IAM \
 </details>
 
-<details><summary>Delete</summary><br/>
+-<details><summary>Delete</summary><br/>
 aws cloudformation delete-stack --stack-name quoddud-gql-beta-gh-actions-user --region us-east-2
 </details>
 
 </details>
 
 <details><summary>PROD</summary><br/>
-<details><summary>Create gh-actions-user</summary><br/>
+-<details><summary>Create gh-actions-user</summary><br/>
 aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --template-body file://main.yml \
   --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
@@ -81,7 +81,7 @@ aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --capabilities CAPABILITY_NAMED_IAM \
 </details>
 
-<details><summary>Update gh-actions-user</summary><br/>
+-<details><summary>Update gh-actions-user</summary><br/>
 aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --template-body file://main.yml \
   --parameters ParameterKey=AssetsEcrRepository,ParameterValue=cloud-unigql-beta \
@@ -94,7 +94,7 @@ aws cloudformation update-stack --stack-name quoddud-gql-beta-gh-actions-user \
   --capabilities CAPABILITY_NAMED_IAM \
 </details>
 
-<details><summary>Delete</summary><br/>
+-<details><summary>Delete</summary><br/>
 aws cloudformation delete-stack --stack-name quoddud-gql-beta-gh-actions-user --region us-east-2
 </details>
 
