@@ -1,3 +1,5 @@
+# Queries
+
 <details><summary>DEV</summary><br/>
 <details><summary>Create gh-actions-user</summary><br/>
 aws cloudformation create-stack --stack-name quoddud-gql-beta-gh-actions-user \
